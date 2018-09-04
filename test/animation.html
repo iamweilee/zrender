@@ -21,6 +21,7 @@
 
         var gradient = new zrender.LinearGradient();
         gradient.addColorStop(0, 'red');
+        gradient.addColorStop(0.5, 'blue');
         gradient.addColorStop(1, 'black');
 
         var circle = new zrender.Circle({
@@ -33,7 +34,7 @@
             },
             style: {
                 fill: gradient,
-                lineWidth: 5,
+                lineWidth: 1,
                 text:'circle',
                 textPosition:'inside'
             }
